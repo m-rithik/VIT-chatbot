@@ -1,0 +1,33 @@
+{
+  "name": "vit-bot-cloud-project",
+  "version": "2.0.0",
+  "description": "VIT Bot - AI-powered assistant for VIT students with papers search, VTOP integration, and more",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@clerk/nextjs": "^6.32.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.3",
+    "jsdom": "^27.0.1",
+    "next": "^14.2.3",
+    "openai": "^4.79.2",
+    "puppeteer": "^24.26.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.2.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module"
+}

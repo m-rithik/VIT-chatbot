@@ -1,0 +1,41 @@
+Club Name | Category | Description | Email | Image URL | Read More URL
+IEEE VIT | Technical | Promotes innovation in electronics, computing, and tech leadership | ieee@vit.ac.in | https://vit.ac.in/images/ieee.jpg | https://vit.ac.in/ieee-vit
+VIT Dance Club | Cultural | Celebrates diverse dance forms through workshops, performances, and competitions | vitdance@vit.ac.in | https://vit.ac.in/images/vitdance.jpg | https://vit.ac.in/vit-dance-club
+VIT Music Club | Cultural | Nurtures musical talent across genres with jam sessions, concerts, and open mics | vitmusic@vit.ac.in | https://vit.ac.in/images/vitmusic.jpg | https://vit.ac.in/vit-music-club
+Entrepreneurship Cell | Business | Fosters startup culture, innovation, and entrepreneurial thinking on campus | ecell@vit.ac.in | https://vit.ac.in/images/ecell.jpg | https://vit.ac.in/entrepreneurship-cell
+Robotics Club | Technical | Builds and competes in robotics challenges, from line-followers to autonomous bots | robotics@vit.ac.in | https://vit.ac.in/images/robotics.jpg | https://vit.ac.in/robotics-club
+VIT Literary Society | Literary | Hosts debates, poetry slams, and creative writing events to spark expression | lit@vit.ac.in | https://vit.ac.in/images/lit.jpg | https://vit.ac.in/literary-society
+VIT Photography Club | Creative | Captures campus life through lenses, hosting photo walks and exhibitions | vitphoto@vit.ac.in | https://vit.ac.in/images/photo.jpg | https://vit.ac.in/photography-club
+VIT Dramatics Club | Performing Arts | Brings stories to life through stage plays, skits, and theatrical workshops | dramatics@vit.ac.in | https://vit.ac.in/images/drama.jpg | https://vit.ac.in/dramatics-club
+VIT Coding Club | Technical | Sharpens coding skills with hackathons, coding contests, and peer mentoring | coding@vit.ac.in | https://vit.ac.in/images/coding.jpg | https://vit.ac.in/coding-club
+VIT Green Club | Sustainability | Advocates for eco-conscious living through clean-up drives and green campaigns | green@vit.ac.in | https://vit.ac.in/images/green.jpg | https://vit.ac.in/green-club
+VIT Quiz Club | Academic | Hosts quiz contests and trivia nights across domains | quiz@vit.ac.in | https://vit.ac.in/images/quiz.jpg | https://vit.ac.in/quiz-club
+VIT Toastmasters | Communication | Builds public speaking and leadership skills through structured sessions | toastmasters@vit.ac.in | https://vit.ac.in/images/toastmasters.jpg | https://vit.ac.in/toastmasters-club
+VIT Astronomy Club | Scientific | Explores the cosmos through stargazing, lectures, and astrophotography | astro@vit.ac.in | https://vit.ac.in/images/astro.jpg | https://vit.ac.in/astronomy-club
+VIT AI Society | Technical | Explores artificial intelligence through projects, talks, and competitions | ai@vit.ac.in | https://vit.ac.in/images/ai.jpg | https://vit.ac.in/ai-society
+VIT Blockchain Club | Technical | Dives into decentralized tech with workshops and blockchain builds | blockchain@vit.ac.in | https://vit.ac.in/images/blockchain.jpg | https://vit.ac.in/blockchain-club
+VIT Cybersecurity Club | Technical | Promotes ethical hacking and digital safety through hands-on labs | cyber@vit.ac.in | https://vit.ac.in/images/cyber.jpg | https://vit.ac.in/cybersecurity-club
+VIT Finance Club | Business | Teaches investing, budgeting, and financial literacy through simulations | finance@vit.ac.in | https://vit.ac.in/images/finance.jpg | https://vit.ac.in/finance-club
+VIT Marketing Society | Business | Explores branding, campaigns, and consumer psychology | marketing@vit.ac.in | https://vit.ac.in/images/marketing.jpg | https://vit.ac.in/marketing-society
+VIT Women in Tech | Empowerment | Supports women in STEM through mentorship and community | wit@vit.ac.in | https://vit.ac.in/images/wit.jpg | https://vit.ac.in/women-in-tech
+VIT Debate Club | Literary | Hosts structured debates and discussion forums on current issues | debate@vit.ac.in | https://vit.ac.in/images/debate.jpg | https://vit.ac.in/debate-club
+VIT Film Society | Creative | Screens films and hosts discussions on cinema and storytelling | film@vit.ac.in | https://vit.ac.in/images/film.jpg | https://vit.ac.in/film-society
+VIT Animation Club | Creative | Explores 2D and 3D animation through workshops and showcases | animation@vit.ac.in | https://vit.ac.in/images/animation.jpg | https://vit.ac.in/animation-club
+VIT Game Dev Club | Technical | Builds games and explores game engines through collaborative projects | gamedev@vit.ac.in | https://vit.ac.in/images/gamedev.jpg | https://vit.ac.in/game-dev-club
+VIT Social Impact Club | Service | Drives change through volunteering, awareness campaigns, and outreach | impact@vit.ac.in | https://vit.ac.in/images/impact.jpg | https://vit.ac.in/social-impact-club
+VIT Mental Health Collective | Wellness | Promotes mental well-being through peer support and awareness | mentalhealth@vit.ac.in | https://vit.ac.in/images/mentalhealth.jpg | https://vit.ac.in/mental-health-collective
+VIT Yoga Club | Wellness | Encourages mindfulness and physical wellness through guided sessions | yoga@vit.ac.in | https://vit.ac.in/images/yoga.jpg | https://vit.ac.in/yoga-club
+VIT Culinary Club | Lifestyle | Explores global cuisines through cooking demos and food festivals | culinary@vit.ac.in | https://vit.ac.in/images/culinary.jpg | https://vit.ac.in/culinary-club
+VIT Fashion Society | Creative | Showcases style and design through fashion shows and styling workshops | fashion@vit.ac.in | https://vit.ac.in/images/fashion.jpg | https://vit.ac.in/fashion-society
+VIT Spoken Word Club | Literary | Celebrates poetry and storytelling through open mics and slam events | spokenword@vit.ac.in | https://vit.ac.in/images/spokenword.jpg | https://vit.ac.in/spoken-word-club
+VIT Eco Club | Sustainability | Promotes environmental awareness through green initiatives and drives | eco@vit.ac.in | https://vit.ac.in/images/eco.jpg | https://vit.ac.in/eco-club
+VIT Chess Club | Academic | Sharpens strategic thinking through tournaments and training | chess@vit.ac.in | https://vit.ac.in/images/chess.jpg | https://vit.ac.in/chess-club
+VIT Hackerspace | Technical | A makerspace for hardware tinkering, IoT, and rapid prototyping | hackerspace@vit.ac.in | https://vit.ac.in/images/hackerspace.jpg | https://vit.ac.in/hackerspace
+VIT Public Policy Forum | Civic | Discusses governance, policy, and civic engagement | policy@vit.ac.in | https://vit.ac.in/images/policy.jpg | https://vit.ac.in/public-policy-forum
+VIT Language Exchange | Cultural | Connects students across languages for learning and cultural sharing | language@vit.ac.in | https://vit.ac.in/images/language.jpg | https://vit.ac.in/language-exchange
+VIT Alumni Connect | Networking | Builds bridges between current students and alumni mentors | alumni@vit.ac.in | https://vit.ac.in/images/alumni.jpg | https://vit.ac.in/alumni-connect
+VIT Sports Society | Athletics | Coordinates sports events, training, and inter-college competitions | sports@vit.ac.in | https://vit.ac.in/images/sports.jpg | https://vit.ac.in/sports-society
+VIT Street Play Collective | Performing Arts | Uses street theatre to raise awareness on social issues | streetplay@vit.ac.in | https://vit.ac.in/images/streetplay.jpg | https://vit.ac.in/street-play-collective
+VIT Classical Arts Club | Cultural | Promotes classical dance, music, and heritage arts | classical@vit.ac.in | https://vit.ac.in/images/classical.jpg | https://vit.ac.in/classical-arts-club
+VIT Tech Writers Guild | Literary | Explores technical writing, documentation, and content strategy | techwrite@vit.ac.in | https://vit.ac.in/images/techwrite.jpg | https://vit.ac.in/tech-writers-guild
+VIT Data Science Society | Technical | Analyzes data through projects, competitions, and tutorials | datascience@vit.ac.in | https://vit.ac.in/images/datascience.jpg | https://vit.ac.in/data-science-society
