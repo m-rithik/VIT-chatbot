@@ -48,6 +48,7 @@ export default function HomePage() {
 
   const [prompt, setPrompt] = useState("");
   const [messages, setMessages] = useState([]);
+  const [activeTab, setActiveTab] = useState("chat");
   const [loading, setLoading] = useState(false);
   const [toast, setToast] = useState("");
   const [showSemesterDropdown, setShowSemesterDropdown] = useState(false);
@@ -863,7 +864,42 @@ export default function HomePage() {
           </SignedOut>
 
           <SignedIn>
-            <section className="hero" aria-label="Greeting">
+            <div
+              className="tab-switcher"
+              role="tablist"
+              aria-label="Primary sections"
+            >
+              <button
+                type="button"
+                role="tab"
+                id="tab-chat"
+                aria-controls="tabpanel-chat"
+                aria-selected={activeTab === "chat"}
+                className={`tab-switcher__button${activeTab === "chat" ? " is-active" : ""}`}
+                onClick={() => setActiveTab("chat")}
+              >
+                Chatbot
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-about"
+                aria-controls="tabpanel-about"
+                aria-selected={activeTab === "about"}
+                className={`tab-switcher__button${activeTab === "about" ? " is-active" : ""}`}
+                onClick={() => setActiveTab("about")}
+              >
+                About
+              </button>
+            </div>
+            {activeTab === "chat" ? (
+              <section
+                className="hero"
+                aria-label="Greeting"
+                role="tabpanel"
+                id="tabpanel-chat"
+                aria-labelledby="tab-chat"
+              >
               <h1>Hey VITian, ready to catch up?</h1>
               <p className="sub">{heroSubtitle}</p>
 
@@ -1307,6 +1343,56 @@ export default function HomePage() {
                 )}
               </div>
             </section>
+            ) : (
+              <section
+                className="about-tab"
+                aria-label="About VIT Chat Bot"
+                role="tabpanel"
+                id="tabpanel-about"
+                aria-labelledby="tab-about"
+              >
+                <div className="about-card">
+                  <h1>About VIT Chat Bot</h1>
+                  <p>
+                    VIT Chat Bot is your personalised campus companion. It blends verified VTOP data with
+                    real-time AI assistance so you can quickly review attendance, assignments, mess menus,
+                    faculty information, and trending discussions without leaving one window.
+                  </p>
+
+                  <div className="about-card__grid">
+                    <div className="about-card__section">
+                      <h2>Why students love it</h2>
+                      <ul>
+                        <li>Conversational interface powered by Google Gemini.</li>
+                        <li>Secure Clerk sign-in keeps your VTOP data protected.</li>
+                        <li>Instant access to faculty, clubs, papers, and mess menus.</li>
+                      </ul>
+                    </div>
+
+                    <div className="about-card__section">
+                      <h2>Download &amp; run locally</h2>
+                      <ol>
+                        <li>Download the latest project archive using the button below.</li>
+                        <li>Extract the zip and open the folder in your terminal.</li>
+                        <li>
+                          Create a <code>.env</code> file with your <code>GEMINI_API_KEY</code>,
+                          <code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code>, and <code>CLERK_SECRET_KEY</code>.
+                        </li>
+                        <li>Run <code>npm install</code> followed by <code>npm run dev</code>.</li>
+                      </ol>
+                      <a
+                        className="download-button"
+                        href="https://github.com/m-rithik/VIT-chatbot/archive/refs/heads/main.zip"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Download Project (.zip)
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            )}
           </SignedIn>
         </main>
 
@@ -1314,56 +1400,58 @@ export default function HomePage() {
       </div>
 
       <SignedIn>
-        <form className="dock" role="search" onSubmit={handleSubmit}>
-          <RedditToggle 
-            isActive={redditSearchEnabled} 
-            onToggle={() => setRedditSearchEnabled(!redditSearchEnabled)}
-            isSearching={redditSearching}
-          />
-          <input
-            ref={inputRef}
-            id="prompt"
-            className="input"
-            placeholder={redditSearchEnabled ? "Search r/vit..." : "Talk to me..."}
-            aria-label="Chat input"
-            value={prompt}
-            disabled={loading}
-            onChange={(event) => setPrompt(event.target.value)}
-          />
-          <button
-            className="btn"
-            id="mic"
-            type="button"
-            title="Voice input (upcoming)"
-            onClick={() => setToast("Voice input coming soon")}
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+        {activeTab === "chat" && (
+          <form className="dock" role="search" onSubmit={handleSubmit}>
+            <RedditToggle 
+              isActive={redditSearchEnabled} 
+              onToggle={() => setRedditSearchEnabled(!redditSearchEnabled)}
+              isSearching={redditSearching}
+            />
+            <input
+              ref={inputRef}
+              id="prompt"
+              className="input"
+              placeholder={redditSearchEnabled ? "Search r/vit..." : "Talk to me..."}
+              aria-label="Chat input"
+              value={prompt}
+              disabled={loading}
+              onChange={(event) => setPrompt(event.target.value)}
+            />
+            <button
+              className="btn"
+              id="mic"
+              type="button"
+              title="Voice input (upcoming)"
+              onClick={() => setToast("Voice input coming soon")}
             >
-              <path
-                d="M12 14a3 3 0 0 0 3-3V7a3 3 0 1 0-6 0v4a3 3 0 0 0 3 3Zm7-3a1 1 0 1 0-2 0 5 5 0 0 1-10 0 1 1 0 1 0-2 0 7 7 0 0 0 6 6.92V20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3v-2.08A7 7 0 0 0 19 11Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
-          <button className="btn send" id="send" type="submit" title="Send" disabled={loading}>
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path d="M3.4 20.6 21 12 3.4 3.4 5 11l10 1-10 1-1.6 7.6Z" fill="currentColor" />
-            </svg>
-          </button>
-        </form>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 14a3 3 0 0 0 3-3V7a3 3 0 1 0-6 0v4a3 3 0 0 0 3 3Zm7-3a1 1 0 1 0-2 0 5 5 0 0 1-10 0 1 1 0 1 0-2 0 7 7 0 0 0 6 6.92V20H8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-3v-2.08A7 7 0 0 0 19 11Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button className="btn send" id="send" type="submit" title="Send" disabled={loading}>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path d="M3.4 20.6 21 12 3.4 3.4 5 11l10 1-10 1-1.6 7.6Z" fill="currentColor" />
+              </svg>
+            </button>
+          </form>
+        )}
       </SignedIn>
 
       {toast && (

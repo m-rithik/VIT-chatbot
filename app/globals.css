@@ -150,6 +150,54 @@ h1 {
   transition: color 0.2s ease;
 }
 
+.tab-switcher {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(12, 22, 78, 0.65);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  margin-bottom: 32px;
+}
+
+.tab-switcher__button {
+  position: relative;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-switcher__button:is(:hover, :focus-visible) {
+  color: var(--text);
+  background: rgba(102, 126, 234, 0.18);
+  outline: none;
+}
+
+.tab-switcher__button.is-active {
+  color: #0c112e;
+  background: linear-gradient(135deg, #a9b7ff 0%, #dfe4ff 100%);
+  box-shadow: 0 10px 30px rgba(7, 14, 60, 0.4);
+}
+
+.tab-switcher__button.is-active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -2571,6 +2619,106 @@ footer {
   background: linear-gradient(135deg, #357abd, #2c5aa0);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.about-tab {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  text-align: left;
+}
+
+.about-card {
+  width: 100%;
+  padding: 36px;
+  border-radius: 28px;
+  background: rgba(10, 16, 60, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(5, 8, 40, 0.4);
+  display: grid;
+  gap: 28px;
+}
+
+.about-card h1 {
+  font-size: 42px;
+  letter-spacing: -0.01em;
+}
+
+.about-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-card__grid {
+  display: grid;
+  gap: 28px;
+}
+
+@media (min-width: 720px) {
+  .about-card__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.about-card__section {
+  padding: 24px;
+  border-radius: 22px;
+  background: rgba(12, 24, 90, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 18px;
+}
+
+.about-card__section h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #eaf0ff;
+}
+
+.about-card__section ul,
+.about-card__section ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-card__section code {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-family: "Space Grotesk", "Manrope", monospace;
+  font-size: 14px;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+  border-radius: 16px;
+  margin-top: 8px;
+  background: linear-gradient(135deg, #6a8dff 0%, #8cbcff 100%);
+  color: #041245;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  box-shadow: 0 18px 40px rgba(8, 16, 80, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 50px rgba(8, 16, 80, 0.55);
 }
 
 .paper-card-counter {
